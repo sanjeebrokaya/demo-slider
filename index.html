@@ -4,51 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./js/swiper/css/swiper.css" />
-
-		<title>Document</title>
-
-		<style>
-			html,
-			body {
-				position: relative;
-				height: 100%;
-			}
-
-			body {
-				background: #eee;
-				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-				font-size: 14px;
-				color: #000;
-				margin: 0;
-				padding: 0;
-			}
-
-			.swiper {
-				width: 100%;
-				height: 100%;
-			}
-
-			.swiper-slide {
-				text-align: center;
-				font-size: 18px;
-				background: #fff;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-
-			.swiper-slide img {
-				display: block;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-
-			.swiper-slide {
-				width: 60%;
-			}
-		</style>
-
+		<link rel="stylesheet" href="style.css">
+		<title>Demo Slider</title>
 		<script src="./js/swiper/js/swiper.js"></script>
 	</head>
 	<body>
@@ -57,13 +14,38 @@
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
-				<div class="swiper-slide" style="background-color: tomato">Slide 1</div>
-				<div class="swiper-slide" style="background-color: skyblue">Slide 2</div>
-				<div class="swiper-slide" style="background-color: indigo">Slide 3</div>
-				<div class="swiper-slide" style="background-color: tomato">Slide 1</div>
-				<div class="swiper-slide" style="background-color: skyblue">Slide 2</div>
-				<div class="swiper-slide" style="background-color: indigo">Slide 3</div>
-				...
+				<div class="swiper-slide">
+					<img src="images/image1.jpeg" alt="">
+					<div class="slideimg-info">
+						<h1>Ready for fun?</h1>
+						<p>Moments of wonder, delivered.</p>
+						<a href="#">Get started ➜</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/image2.jpeg" alt="">
+					<div class="slideimg-info">
+						<h1>Ready for Wonder?</h1>
+						<p>Moments of wonder, delivered.</p>
+						<a href="#">Get started ➜</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/image3.png" alt="">
+					<div class="slideimg-info">
+						<h1>Ready for Action?</h1>
+						<p>Moments of wonder, delivered.</p>
+						<a href="#">Get started ➜</a>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/image4.jpg" alt="">
+					<div class="slideimg-info">
+						<h1>Ready for Adventure?</h1>
+						<p>Moments of wonder, delivered.</p>
+						<a href="#">Get started ➜</a>
+					</div>
+				</div>
 			</div>
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
@@ -72,74 +54,14 @@
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
-		<!-- <div style="overflow: hidden; padding: 70px 0 30px">
-			<div class="row">
-				<div class="col lrg-12">
-					<div class="slider-wrap">
-						<div class="slider">
-							<div class="outer">
-								<div class="tray">
-									<section id="all-articles" style="left: -100%">
-										<img src="images/image1.jpeg" />
-									</section>
-									<section id="featured-articles" style="left: 0%" class="current">
-										<img src="images/image2.jpeg" />
-									</section>
-									<section id="popular-articles" style="left: 100%">
-										<img src="images/image3.png" />
-									</section>
-									<section id="new-articles" style="left: 200%">
-										<img src="images/image3.png" />
-									</section>
-								</div>
-							</div>
-							<div class="mask left">
-								<a href="#" class="arrow left"><span>All</span></a>
-							</div>
-							<div class="mask right">
-								<a href="#" class="arrow right"><span>Popular</span></a>
-							</div>
-						</div>
-						<nav class="slider-nav">
-							<ul>
-								<li class="current"><a href="#featured-articles">Featured</a></li>
-								<li><a href="#popular-articles">Popular</a></li>
-								<li><a href="#new-articles">New</a></li>
-								<li><a href="#all-articles">All</a></li>
-							</ul>
-							<span class="highlight"></span>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div> -->
+		
 
 		<script>
-			// const swiper = new Swiper(".swiper", {
-			// 	// Optional parameters
-			// 	direction: "horizontal",
-			// 	loop: true,
-
-			// 	// If we need pagination
-			// 	pagination: {
-			// 		el: ".swiper-pagination",
-			// 	},
-
-			// 	// Navigation arrows
-			// 	navigation: {
-			// 		nextEl: ".swiper-button-next",
-			// 		prevEl: ".swiper-button-prev",
-			// 	},
-
-			// 	// And if we need scrollbar
-			// 	scrollbar: {
-			// 		el: ".swiper-scrollbar",
-			// 	},
-			// });
 			var swiper = new Swiper(".mySwiper", {
 				slidesPerView: "auto",
 				centeredSlides: true,
-				spaceBetween: 30,
+				spaceBetween: 20,
+				loop: true,
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,

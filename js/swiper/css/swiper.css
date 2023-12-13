@@ -30,8 +30,8 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    overflow: hidden;
-    overflow: clip;
+    overflow-x: hidden;
+    overflow-x: clip;
     list-style: none;
     padding: 0;
     z-index: 1;
@@ -250,14 +250,17 @@
     height: var(--swiper-virtual-size);
 }
 :root {
-    --swiper-navigation-size: 44px;
+    --swiper-navigation-size: 24px;
 }
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 50%);
-    width: calc(var(--swiper-navigation-size) / 44 * 27);
-    height: var(--swiper-navigation-size);
+    top: var(--swiper-navigation-top-offset, 35%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #fff;
     margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
     z-index: 10;
     cursor: pointer;
@@ -265,6 +268,11 @@
     align-items: center;
     justify-content: center;
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    box-shadow: 0pt 2pt 6pt rgba(0,0,0,.2);
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -295,12 +303,12 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 10px);
+    left: var(--swiper-navigation-sides-offset, 12%);
     right: auto;
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 10px);
+    right: var(--swiper-navigation-sides-offset, 12%);
     left: auto;
 }
 .swiper-button-lock {
@@ -314,16 +322,14 @@
     letter-spacing: 0;
     font-variant: initial;
     line-height: 1;
+    color: #000;
+    font-weight: 800;
 }
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
     content: "prev";
 }
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 10px);
-    left: auto;
-}
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     content: "next";
@@ -380,11 +386,11 @@
 .swiper-pagination-bullet {
     width: var(
         --swiper-pagination-bullet-width,
-        var(--swiper-pagination-bullet-size, 8px)
+        var(--swiper-pagination-bullet-size, 10px)
     );
     height: var(
         --swiper-pagination-bullet-height,
-        var(--swiper-pagination-bullet-size, 8px)
+        var(--swiper-pagination-bullet-size, 10px)
     );
     display: inline-block;
     border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
