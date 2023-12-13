@@ -50,7 +50,7 @@ body {
     background-color: #fff;
     padding: 1.25rem 2.5rem;
     position: absolute;
-    width:50%;
+    width: fit-content;
     left:0;
     right:0;
     bottom: -6.5rem;
