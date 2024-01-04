@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./js/swiper/css/swiper.css" />
-		<link rel="stylesheet" href="style.css">
-		<title>Demo Slider</title>
-		<script src="./js/swiper/js/swiper.js"></script>
-	</head>
-	<body>
-		<!-- Slider main container -->
-		<div class="hm-banner">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./js/swiper/css/swiper.css" />
+	<link rel="stylesheet" href="style.css">
+	<title>Demo Slider</title>
+	<script src="./js/swiper/js/swiper.js"></script>
+</head>
+
+<body>
+	<!-- Slider main container -->
+	<div class="hm-banner">
 		<div class="swiper mySwiper">
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
@@ -21,7 +23,8 @@
 					<div class="container-sinfo">
 						<div class="slideimg-info">
 							<h1>The new old.</h1>
-							<p>The Officially Licensed BRX02™ Land Rover® Series III 88 Pickup 1/10 4WD Radio Control Car Kit The Officially</p>
+							<p>The Officially Licensed BRX02™ Land Rover® Series III 88 Pickup 1/10 4WD Radio Control
+								Car Kit The Officially</p>
 							<div class="slider-options">
 								<a href="#">Shop pick up kit</a>
 								<a href="#">shop parts list</a>
@@ -34,9 +37,13 @@
 					<img class="mobile-sliderimg" src="images/mobileimg2.jpg" alt="">
 					<div class="container-sinfo">
 						<div class="slideimg-info">
-							<h1>Ready for fun?</h1>
-							<p>Moments of wonder, delivered.</p>
-							<a href="#">Get started ➜</a>
+							<h1>The new old.</h1>
+							<p>The Officially Licensed BRX02™ Land Rover® Series III 88 Pickup 1/10 4WD Radio Control
+								Car Kit The Officially</p>
+							<div class="slider-options">
+								<a href="#">Shop pick up kit</a>
+								<a href="#">shop parts list</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -45,9 +52,13 @@
 					<img class="mobile-sliderimg" src="images/mobileimg3.jpg" alt="">
 					<div class="container-sinfo">
 						<div class="slideimg-info">
-							<h1>Ready for fun?</h1>
-							<p>Moments of wonder, delivered.</p>
-							<a href="#">Get started ➜</a>
+							<h1>The new old.</h1>
+							<p>The Officially Licensed BRX02™ Land Rover® Series III 88 Pickup 1/10 4WD Radio Control
+								Car Kit The Officially</p>
+							<div class="slider-options">
+								<a href="#">Shop pick up kit</a>
+								<a href="#">shop parts list</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -56,39 +67,54 @@
 					<img class="mobile-sliderimg" src="images/mobileimg4.jpg" alt="">
 					<div class="container-sinfo">
 						<div class="slideimg-info">
-							<h1>Ready for fun?</h1>
-							<p>Moments of wonder, delivered.</p>
-							<a href="#">Get started ➜</a>
+							<h1>The new old.</h1>
+							<p>The Officially Licensed BRX02™ Land Rover® Series III 88 Pickup 1/10 4WD Radio Control
+								Car Kit The Officially</p>
+							<div class="slider-options">
+								<a href="#">Shop pick up kit</a>
+								<a href="#">shop parts list</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
 
 			<!-- navigation buttons -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						d="M11.8284 12.0005L14.6569 14.8289L13.2426 16.2431L9 12.0005L13.2426 7.75781L14.6569 9.17203L11.8284 12.0005Z"
+						fill="#000"></path>
+				</svg>
+			</div>
+			<div class="swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path
+						d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"
+						fill="#000"></path>
+				</svg></div>
 		</div>
 
 		<!-- pagination -->
 		<div class="swiper-pagination"></div>
 	</div>
-		
 
-		<script>
-			var swiper = new Swiper(".mySwiper", {
-				slidesPerView: "auto",
-				centeredSlides: true,
-				spaceBetween: 20,
-				loop: true,
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-				},
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
-		</script>
-	</body>
+
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 20,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
+</body>
+
 </html>
