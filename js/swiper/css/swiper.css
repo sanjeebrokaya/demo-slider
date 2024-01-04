@@ -255,13 +255,13 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 35%);
-    width: 40px;
-    height: 40px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    opacity: 0.5;
     background-color: #fff;
-    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
     z-index: 10;
     cursor: pointer;
     display: flex;
@@ -303,12 +303,12 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 12%);
+    left: var(--swiper-navigation-sides-offset, 11.5%);
     right: auto;
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 12%);
+    right: var(--swiper-navigation-sides-offset, 11.5%);
     left: auto;
 }
 .swiper-button-lock {
@@ -335,7 +335,7 @@
     content: "next";
 }
 .swiper-pagination {
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     transition: 0.3s opacity;
     transform: translate3d(0, 0, 0);
@@ -352,10 +352,11 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom, 8px);
-    top: var(--swiper-pagination-top, auto);
+    /* bottom: var(--swiper-pagination-bottom, 8px);
+    top: var(--swiper-pagination-top, auto); */
     left: 0;
     width: 100%;
+    margin-top: 20px;
 }
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
