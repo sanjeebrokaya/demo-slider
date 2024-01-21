@@ -3,13 +3,14 @@
 
 <head>
 	<meta charset="UTF-8" />
+	<title>Demo Slider</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./js/swiper/css/swiper.css" />
-	<link rel="stylesheet" href="style.css">
-	<title>Demo Slider</title>
-	<script src="./js/swiper/js/swiper.js"></script>
-</head>
+	<link rel="stylesheet" href="style.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+</head>
 <body>
 	<!-- Slider main container -->
 	<div class="hm-banner">
@@ -17,8 +18,34 @@
 			<!-- Additional required wrapper -->
 			<div class="swiper-wrapper">
 				<!-- Slides -->
-				<div class="swiper-slide">
+				<div class="swiper-slide container">
 					<img class="desktop-sliderimg" src="images/image1.png" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
+					<div class="container-sinfo">
+						<div class="slideimg-info special-offer">
+							<h2>YEAR-END SALE</h2>
+							<h1>Up to 70% off</h1>
+							<p>Ends 12AM PST, Jan 2, 2024</p>
+							<div class="slider-options">
+								<a href="#">SHOP NOW</a>
+							</div>
+							<div class="so-product-opt">
+								<h1>EXPLORE OUR PRODUCTS</h1>
+								<a href="#">EXPLORE OUR PRODUCTS</a>
+								<a href="#">BRX CAR KITS</a>
+								<a href="#">PROBUILD WHEELS</a>
+								<a href="#">KUDU LIGHT KITS</a>
+								<a href="#">MUSCLE WINCH</a>
+								<a href="#">PHAT AXLE</a>
+								<a href="#">HUSTLER TIRES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide container">
+					<img class="desktop-sliderimg" src="images/image1.png" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
 					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
 					<div class="container-sinfo">
 						<div class="slideimg-info">
@@ -32,9 +59,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<img class="desktop-sliderimg" src="images/image2.jpeg" alt="">
-					<img class="mobile-sliderimg" src="images/mobileimg2.jpg" alt="">
+				<div class="swiper-slide container">
+					<img class="desktop-sliderimg" src="images/image1.png" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
 					<div class="container-sinfo">
 						<div class="slideimg-info">
 							<h1>The new old.</h1>
@@ -47,9 +75,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<img class="desktop-sliderimg" src="images/image3.png" alt="">
-					<img class="mobile-sliderimg" src="images/mobileimg3.jpg" alt="">
+				<!-- <div class="swiper-slide container">
+					<img class="desktop-sliderimg" src="images/image1.png" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
+					<img class="mobile-sliderimg" src="images/mobileimg1.jpg" alt="">
 					<div class="container-sinfo">
 						<div class="slideimg-info">
 							<h1>The new old.</h1>
@@ -61,49 +90,39 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="swiper-slide">
-					<img class="desktop-sliderimg" src="images/image4.jpg" alt="">
-					<img class="mobile-sliderimg" src="images/mobileimg4.jpg" alt="">
-					<div class="container-sinfo">
-						<div class="slideimg-info">
-							<h1>The new old.</h1>
-							<p>The Officially Licensed BRX02™ Land Rover® Series III 88 Pickup 1/10 4WD Radio Control
-								Car Kit The Officially</p>
-							<div class="slider-options">
-								<a href="#">Shop pick up kit</a>
-								<a href="#">shop parts list</a>
-							</div>
-						</div>
-					</div>
-				</div>
+				</div> -->
 			</div>
-
 			<!-- navigation buttons -->
-			<div class="swiper-button-prev">
+		<div class="swiper-btns" style="position: absolute; top: 0; left: 0; height: 100%; width: 100%;">
+			<div class="container" style="position: relative;height: 100%;">
+			  <div class="swiper-button-prev">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-					<path
-						d="M11.8284 12.0005L14.6569 14.8289L13.2426 16.2431L9 12.0005L13.2426 7.75781L14.6569 9.17203L11.8284 12.0005Z"
-						fill="#000"></path>
+				  <path
+					d="M11.8284 12.0005L14.6569 14.8289L13.2426 16.2431L9 12.0005L13.2426 7.75781L14.6569 9.17203L11.8284 12.0005Z"
+					fill="#000"></path>
 				</svg>
+			  </div>
+			  <div class="swiper-button-next">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				  <path
+					d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"
+					fill="#000"></path>
+				</svg>
+			  </div>
 			</div>
-			<div class="swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-					<path
-						d="M12.1717 12.0005L9.34326 9.17203L10.7575 7.75781L15.0001 12.0005L10.7575 16.2431L9.34326 14.8289L12.1717 12.0005Z"
-						fill="#000"></path>
-				</svg></div>
+		  </div>
 		</div>
-
+	
 		<!-- pagination -->
 		<div class="swiper-pagination"></div>
 	</div>
-
-
+	
+	
 	<script>
 		var swiper = new Swiper(".mySwiper", {
 			slidesPerView: "auto",
 			centeredSlides: true,
-			spaceBetween: 20,
+			spaceBetween: 5,
 			loop: true,
 			pagination: {
 				el: ".swiper-pagination",
