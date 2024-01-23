@@ -211,6 +211,16 @@
   animation: sizeInc 0.5s ease forwards;
   border: 2px solid #BDBDBD;
 }
+@keyframes sizeInc {
+  from {
+      width: 0px;
+      height: 0px; 
+  }
+  to {
+      width: 18px;
+      height: 18px;
+  }
+}
 /*  */
 
 /* content */
@@ -451,6 +461,9 @@
   }
 
   @media (max-width:768px) {
+    .slick-slide {
+      margin: 0 5px;
+    }
     .swiper-slide {
       width: calc(100% - 50px);
     }
@@ -467,6 +480,10 @@
     .slider-options {
       flex-direction: column;
     }
+    .swiper-button-next, .swiper-button-prev {
+      height: 40px;
+      width: 40px;
+  }
   }
 
   @media (max-width:600px) {
